@@ -1,5 +1,10 @@
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/verma/mcti-clojure-workshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+Friday, April 3 2015 as a part of the [Mission Creek Tech Innovation Conference](http://www.missionfreak.com/innovation/).  All day event.
+
+[Buy your Ticket!](http://midwestix.securemytix.com/event/3930181)
+
+
 # Goals
 ## Primary Goals
 - Gain familarity with Clojure(Script).
