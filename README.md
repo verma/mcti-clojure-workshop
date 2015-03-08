@@ -1,3 +1,5 @@
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/verma/mcti-clojure-workshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # Goals
 ## Primary Goals
 - Gain familarity with Clojure(Script).
@@ -28,3 +30,8 @@
 - `2:00 - 3:00` - Try out how Clojure (Functional languages) does things differently (Immutability, Atoms, Identities etc.).
 - `3:00 - End`  - Do fun coding while colaborating with peers with mini-sessions into Reagent for web-app development.
 - `End - End + 1:00` - Demos.
+
+# References
+
+- [Clojure for the Brave and True](http://www.braveclojure.com/)
+- [ClojureDocs](http://clojuredocs.org/)
