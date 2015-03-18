@@ -48,6 +48,23 @@
 		padding: 5px;
 		opacity: 0.7;
 	}
+
+	.all-links {
+		clear: both;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	.all-links a {
+		padding: 15px;
+		float: left;
+		display: inline-block;
+	}
+	.title {
+		font-size: 0.6em;
+	}
 </style>
 
  
@@ -61,23 +78,28 @@
 </head>
  
 <body id="index" class="home">
-<p class="code">
-	(<span class="form">question</span> <span class="str">"I CAN HAZ STICKRZ?"</span>)
+<div class="code">
+	<div class="title">
+	MCTI Clojure Workshop at Mission Creek v4.3.2015
+	</div>
 	<br>
-	=> <span class="kw">:yes</span>
+	=> (<span class="form">question</span> <span class="str">"I CAN HAZ STICKRZ?"</span>)
+	<br>
+	<span class="kw">:yes</span>
 	<br>
 	<br>
-	(<span class="form">question</span> <span class="str">"Wht stickrz i can haz for noms?"</span>)
+	=> (<span class="form">question</span> <span class="str">"Wht stickrz i can haz for noms?"</span>)
 	<br>
-	=> [
+	[
 	<br>
-	<a target="_blank" href="http://clojure.org/"><img src="http://clojure.org/space/showimage/clojure-icon.gif"></a>
-	<a target="_blank" href="http://mazira.com/"><img src="https://mazira.com/images/main-logo.png"></a>
-	<a target="_blank" href="http://peardeck.com/"><img src="https://www.peardeck.com/img/press-kit/full-4c-white-background--transparent.png"></a>
-	<br>
+	<div class="all-links">
+		<a target="_blank" href="http://clojure.org/"><img src="http://clojure.org/space/showimage/clojure-icon.gif"></a>
+		<a target="_blank" href="http://mazira.com/"><img src="https://mazira.com/images/main-logo.png"></a>
+		<a target="_blank" href(="http://peardeck.com/"><img src="https://www.peardeck.com/img/press-kit/full-4c-white-background--transparent.png"></a>
+		<div class="clear"></div>
+	</div>
 	]
-	
-</p>
+</div>
 
 <div class="copy">All logos used on this page are copyright and/or trademarks of their respective owners.  Color theme: <a target="_blank" href="https://github.com/chriskempson">Chris Kempson's Tommorrow</a>, fonts: Liberation Mono, Consolas, Monaco, Menlo.</div>
 </body>
