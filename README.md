@@ -4,6 +4,8 @@ Friday, April 3 2015 as a part of the [Mission Creek Tech Innovation Conference]
 
 [Buy your Ticket!](http://midwestix.securemytix.com/event/3930181)
 
+Check out the [Sticker Collage](http://udayv.com/mcti-clojure-workshop/stickers.html) to see what all stickers you can collect at the event.
+
 
 # Goals
 ## Primary Goals
