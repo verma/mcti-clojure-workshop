@@ -328,8 +328,8 @@ var a = 1 * 2 * 3 * 4 * 5 * 6;
 
 ```clojure
 (if (= 4 4)
-  "yes they are equal"
-  "nope, failure")   ;; "yes they are equal"
+  "equal"
+  "nope, failure")   ;; "equal"
 ```
 
 
@@ -338,18 +338,18 @@ var a = 1 * 2 * 3 * 4 * 5 * 6;
 
 ```clojure
 (if (zero? (mod 10 2)))
-  "10 is divisible by 2"
-  "nope, failure")   ;; "10 is divisible by 2"
+  "2 divides 10"
+  "nope, failure")   ;; "2 divides 10"
 ```
 
 
 
 
 ```
-(loop [v 0]           ;; <-- v = 0
+(loop [v 10]           ;; <-- v = 10
   (println v)
-  (if-not (zero? v)   ;; if v is not zero
-    (recur (inc v)))) ;; recur with inc'ed v 
+  (when (pos? v)
+    (recur (dec v)))) ;; recur with dec'd v 
 ```
 
 
@@ -359,7 +359,7 @@ var a = 1 * 2 * 3 * 4 * 5 * 6;
 ```
 (loop [v (read-byte)]
   (when-not (eof? v)
-    (process-byte v)
+    (process-byte! v)
     (recur (read-byte))))
   
 ```
@@ -373,7 +373,7 @@ var a = 1 * 2 * 3 * 4 * 5 * 6;
 (loop [] 
   (let [v (read-byte)]
     (when-not (eof? v)
-        (process-byte v)
+        (process-byte! v)
         (recur))))
   
 ```
@@ -382,10 +382,21 @@ var a = 1 * 2 * 3 * 4 * 5 * 6;
 
 
 ```
-(loop [] 
-  (let [v (read-byte)]
-    (when-not (eof? v)
-        (process-byte v)
-        (recur))))
+(doall
+  (map process-byte!
+    (read-bytes-from-file)))
   
+```
+
+
+
+
+
+```
+(ns my-code
+  (:require [quil.core :as q]))
+
+(q/defsketch stuff
+  ;; ...
+  )
 ```

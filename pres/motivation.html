@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Clojure Workshop</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme-motivation.css" id="theme">
+        <link rel="stylesheet" href="css/zenburn.css">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section>
+                    <h1>I can haz clojure?</h1>
+                </section>
+
+                <section>
+                    <h2>Clojure is a LISP</h2>
+
+                    <p>Lost In Stupid Parenthesis</p>
+                    <i class="quot">
+                        Often Emulated/pillaged, still not duplicated"
+                    </i>
+                </section>
+
+                <section>
+                    <h2>Clojure targets multiple Platforms</h2>
+                    <i class="quot">VMs, not OSes, are the platforms of the future</i>
+
+                    <p>Java, Javascript and .NET</p>
+                </section>
+
+                <section>
+                    <h2>Designed ground up for Concurrency</h2>
+
+                    <p>Immutability, Persistent Data Structures, Software Transactional Memory, Agents, Go inspired async facilities</p>
+                </section>
+
+                <section>
+                    <h2>General Purpose</h2>
+
+                    <p>Applies to most if not all problems, but that doesn't mean its a hammer for every nail</p>
+                </section>
+
+                <section data-background="#9E0515">
+                    <h2>Work in Progress</h2>
+                    <p>Being improved everyday, still not perfect and has ways to go</p>
+                </section>
+
+                <section data-background="#9E0515">
+                    <h2>Tooling</h2>
+                    <p>Build tools, setting up environment etc. are still some work</p>
+                </section>
+
+                <section data-background="#9E0515">
+                    <h2>Clojurescript Tooling</h2>
+                    <p>Need more work than Clojure tooling, tons of projects are available to make this easy</p>
+                </section>
+
+
+                <section data-background="#9E0515">
+                    <h2>Business driven reasons to not use Clojure</h2>
+                    <p>Not a big enough talent pool</p>
+                </section>
+
+                <section data-background="#9E0515">
+                    <h2>Not old enough?</h2>
+                    <p>Is it just another language which are popping out everywhere?</p>
+                </section>
+
+                <section data-background="#9E0515">
+                    <h2>Is it relevant to my career?</h2>
+                    <p>Will I find a job if I learn this language?</p>
+                </section>
+
+                <section data-background="#7F305A">
+                    <h1>Why learn Clojure?</h1>
+                </section>
+
+                <section data-background="#7F305A"> 
+                    <h2>Because it's a LISP</h2>
+                    <i class="nquot">"I suppose I should learn Lisp, but it seems so foreign."
+                    <br>
+                    - Paul Grahm, Nov 1983</i>
+
+                    <p>You should give LISP a shot at least once in your programming career</p>
+                </section>
+
+                <section data-background="#7F305A"> 
+                    <h2>To be a better Programmer</h2>
+                    <i class="nquot">
+                        " Lisp is worth learning for the profound enlightenment experience you will have when you finally get it; that experience will make you a better programmer for the rest of your days, even if you never actually use Lisp itself a lot."
+                        <br>
+                        - Eric S. Raymond, How to become a Hacker
+                    </i>
+                </section>
+
+                <section data-background="#7F305A"> 
+                    <h2>Practical, Relevant and Deep</h2>
+                    <p>Let's you solve contemporary problems: Web, Server and Desktop with roots in some Deep concepts</p>
+                </section>
+
+                <section data-background="#7F305A"> 
+                    <h2>Almost no syntax</h2>
+                    <p>Very minimal syntax, almost as complex as writing a JSON file.</p>
+                </section>
+
+                <section data-background="#7F305A"> 
+                    <h2>It's fun</h2>
+                    <p>Consistent, concise and a Joy.</p>
+                </section>
+
+                <section>
+                    <a href="javascript:" onclick="launchvideo();">
+                        <h2>Motivational Video</h2>
+                    </a>
+                </section>
+            </div>
+		</div>
+
+		<script src="js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'js/notes.js' }
+				]
+			});
+
+            launchvideo = function() {
+                window.open("https://www.youtube.com/embed/6w2UxDdhZPk?rel=0&autoplay=1&controls=0&showinfo=0", "Motivational Video");
+            };
+		</script>
+	</body>
+</html>
