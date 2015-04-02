@@ -1,8 +1,7 @@
 
 ```clojure
-(def title  "Clojure Workshop")
-(def author "Uday Verma")
-(def date   "Apr 3, 2015")
+(def title
+  "Drinking from the Clojure Firehose")
 ```
 
 
@@ -79,8 +78,8 @@ var a = 1 * 2 * 3 * 4 * 5 * 6;
 ```clojure
 (def a {1 "Mickey"
         2 "Mouse"})
-
-(def b [:this :stuff :is :out :of :control])
+(def b [:this :stuff :is
+        :out :of :control])
 
 (count a) ;; 2
 (count b) ;; 6
@@ -90,10 +89,9 @@ var a = 1 * 2 * 3 * 4 * 5 * 6;
 
 
 ```clojure
-(def a {1 "Mickey"
-        2 "Mouse"})
-
-(def b [:this :stuff :is :out :of :control])
+(def a {1 "Mickey" 2 "Mouse"})
+(def b [:this :stuff :is
+        :out :of :control])
 
 (a 1)     ;; "Mickey"
 (b 3)     ;; :out
