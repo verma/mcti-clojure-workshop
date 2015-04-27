@@ -9,6 +9,8 @@ Check out the [Sticker Collage](http://udayv.com/mcti-clojure-workshop/stickers.
 
 # Goals
 ## Primary Goals
+
+[![Join the chat at https://gitter.im/verma/mcti-clojure-workshop](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/verma/mcti-clojure-workshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 - Gain familarity with Clojure(Script).
 - Learn about functional programming.
 - Learn about the Clojure(Script) ecosystem (bootstrapping apps).
